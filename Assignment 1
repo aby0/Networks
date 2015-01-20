@@ -1,0 +1,26 @@
+#Assignment 1 Description:
+
+* Select five hosts of your choice in the Internet  and experiment with pinging each host 20 times at three different hours of the day. Check if there exist cases which
+shows packet loss greater than 0% and provide reasoning. Pick one of the above used hosts and
+repeat the experiment with different packet sizes from 64-bytes to 2048-bytes. Plot the average RTT
+and explain how change in packet size and time of the day impacts RTT. 
+
+* Perform traceroute experiment (with same hosts used in Q1) at three different hours of the day
+to determine the routes used.
+
+1. List out the hop counts for each host in each time slot. Determine the common hops between
+two routes if they exist.
+2. Check and explain the reason if route to same host changes at different times of the day. 
+3. Inspect the cases when traceroute does not find complete paths to some hosts and provide
+reasoning.
+4. Is it possible to find the route to certain hosts which fail to respond with ping experiment?
+Give reasoning.
+
+Q3. Use the tool iperf (https://iperf.fr/) for these experiments.
+a) Use two computers (preferably one at your hostel and the other at the department) as a 
+client and a server. Send TCP packets of one time write-buffer length for 8KB, 16KB, 
+32KB, 64KB and 128KB, and report the observed bandwidth.
+b) Using the same setup as above, send UDP packets of datagram size as 1400 bytes, 1600 
+bytes, 1800 bytes, 2000 bytes and 2200 bytes, and report the observed bandwidth. 
+c) Using the same setup as above with default one time write-buffer size, report the TCP
+bandwidth for TCP window size as 100K, 200K, 300K and 400K. 
